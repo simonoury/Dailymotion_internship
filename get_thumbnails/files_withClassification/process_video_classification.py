@@ -119,9 +119,6 @@ if __name__ == "__main__":
         if 550 < images:
             EPS = 18
 
-
-
-
         n_clusters, n_noise = get_cluster_num(images_inceptionv3_stack, EPS)
         print("Number of clusters: ", n_clusters)
         print("Noise points: ", n_noise)
