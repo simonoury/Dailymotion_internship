@@ -1,6 +1,6 @@
 # Dailymotion_internship
 Here is the code made during my 3 month internship at Dailymotion.
-The aim was to create an algorithm capable of automating selecting thumbnails.
+The aim was to create an algorithm capable of automatically select thumbnails.
 Thumbnail selection is based on the aesthetics of the image and the relevancy to the video.
 This second part was quite a challenge and could not be finished in given time. 
 The file process_video.py recieves a video and outputs the thumbnail (image with the best aesthetic score)
