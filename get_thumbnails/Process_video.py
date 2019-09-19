@@ -39,11 +39,11 @@ def get_cluster_num (data, EPS):
 
 def get_model():
     model = Sequential()
-    model.add(Dense(1024, input_shape = (2048,), activation = 'relu'))
-    model.add(Dense(512, activation = 'relu'))
-    model.add(Dense(256, activation = 'relu'))
-    model.add(Dense(64, activation = 'relu'))
-    model.add(Dense(1, activation = 'linear'))
+    model.add(Dense(1024, input_shape = (2048,), activation = 'linear'))
+    model.add(Dense(512, activation = 'linear'))
+    model.add(Dense(256, activation = 'linear'))
+    model.add(Dense(64, activation = 'linear'))
+    model.add(Dense(1, activation = 'relu'))
     model.compile(optimizer=optimizers.Adam(lr = 0.00001), loss='mean_squared_error')
     checkpoint_path = "model_AVA_withflip/cp-00020.ckpt"
     model.load_weights(checkpoint_path, by_name = False)
