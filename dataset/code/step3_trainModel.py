@@ -8,12 +8,12 @@ import numpy as np
 def create_model ():
 
     model = Sequential()
-
-    model.add(Dense(1024, input_shape = (2048,), activation = 'linear'))
-    model.add(Dense(512, activation = 'linear'))
-    model.add(Dense(256, activation = 'linear'))
-    model.add(Dense(64, activation = 'linear'))
-    model.add(Dense(1, activation = 'relu'))
+    
+    model.add(Dense(1024, input_shape = (2048,), activation = 'relu'))
+    model.add(Dense(512, activation = 'relu'))
+    model.add(Dense(256, activation = 'relu'))
+    model.add(Dense(64, activation = 'relu'))
+    model.add(Dense(1, activation = 'linear'))
 
     model.compile(optimizer=optimizers.Adam(lr = 0.00001), loss='mean_squared_error')
 
